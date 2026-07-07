@@ -1,0 +1,18 @@
+CREATE TABLE Eco_inventory (
+    id SERIAL PRIMARY KEY,
+    stock VARCHAR(80) NOT NULL,
+    center_id INT NOT NULL,
+    product_id INT NOT NULL,
+    
+    CONSTRAINT fk_Eco_inventory_center
+      FOREIGN KEY (center_id)
+      REFERENCES eco_distribuition_center (id)
+      ON DELETE cascade,
+      
+      CONSTRAINT fk_Eco_inventory_product
+      FOREIGN KEY (product_id)
+      REFERENCES ecp_products (id)
+      ON DELETE cascade
+      );
+
+      

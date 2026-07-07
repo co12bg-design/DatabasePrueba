@@ -444,3 +444,6 @@ project/
 
 Name: Johana Bolivar
 Clan:Puerta de Oro
+
+![alt text](image-1.png)
+![alt text](image-2.png)
